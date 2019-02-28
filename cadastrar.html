@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <meta charset="utf-"/>
+        <title> receitas Sra. x </title>
+
+          </div>  
+    </head>
+<body>
+    <div id="cabecalho">
+        <div id="banner">
+            <!-- Inserir a figura do banner-->
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">home</a></li> 
+                <li><a href="cadastrar.html">cadastrar receitas</a></li> 
+                <li><a href="#">categorias de receitas</a></li> 
+                <li><a href="#">contato</a></li>                
+            </ul>
+        </div>
+<div id="pesquisa">
+    <p id="redes sociais">
+        <img src="png/face.png" />
+        <img src="png/insta.png"/>
+        <img src="png/twitter.png"/>
+        
+    </p>
+    <p>
+        <input type="search" name="pesquisa"/> 
+        <input type="image" name="lupa" alt="pesquisar" src="png/lupa.png"/> 
+
+    </p>
+
+
+</div>
+
+    <div id="corpo">
+        <h1>Nova Receita</h1>
+        <p><label for="nome">Nome da Receita</label></p>
+        <input type="text" name="nome" id="nome" placeholder="Digite o nome da Receita"/>
+        <p><label for="foto"></p>
+            <input type="file" name="foto" id="foto" />
+        </label>
+        <p>
+            <label for="descricao">Descrição da Receita;
+                <textarea id="descricao" name="descricao" placeholder="Digite uma pequena descrição sobre a receita" cols="50" rows="5">
+
+                </textarea>
+
+            </label>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Novo Ingrediente:</legend>
+                <p>
+                    <label for="qtde">Quantidade:
+                        <input type="number" name="qtde" id="qtde" min="1" max="1000"/>
+                    </label>
+                </p>
+                <p>
+                    <label for="unidade">Unidade de medida
+                        <select id="unidade" name="unidade">
+                            <option value="cs">colher de sopa</option>
+                            <option value="cc">colher de chá</option>
+                            <option value="x">xícara</option>
+                        </select>
+
+                    </label>
+                </p>
+                <p>
+                    <label for="descingrediente">Descrição: 
+                        <input type="text" name="descingrediente" id="descingrediente"
+                        size="30" placeholder="Digite o nome do ingediente">
+                    </label>
+                </p> 
+                <button id="btnAdicionar">Adicionar Ingrediente</button>   
+            </fieldset>
+        </p>
+        <p>
+            <h5>Ingredientes Adicionados</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Quantidade
+                        </th>
+                        <th>
+                            Descrição
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tbl-ingredientes">
+                    <tr id="Ingrediente">
+                    <td id="qtde-ingrediente">
+                    </td>
+                    <td id="desc-ingrediente">
+                    </td>
+                    </tr>    
+                </tbody>       
+
+            </table>
+        </p>
+        <p>
+                <label for="descricao">Descrição da Receita;
+                        <textarea id="descricao" name="descricao" placeholder="Digite uma pequena descrição sobre a receita" cols="50" rows="5">
+        
+                        </textarea> 
+        </p>
+    </div>
+    
+
+    <div id="rodape">
+        <p>Desenvolvido por 1TDSJ - FIAP &copy; 2019</p>
+        <p id="redes sociais">
+                <img src="png/face.png" />
+                <img src="png/insta.png"/>
+                <img src="png/twitter.png"/>
+</div>
+    </body>
+</html>
