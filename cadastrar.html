@@ -1,6 +1,6 @@
 <html>
     <head>
-        <meta charset="utf-"/>
+        <meta charset="utf-8"/>
         <title> receitas Sra. x </title>
 
           </div>  
@@ -36,6 +36,7 @@
 
     <div id="corpo">
         <h1>Nova Receita</h1>
+        <form action="salvar.jsp" method="POST"></form>
         <p><label for="nome">Nome da Receita</label></p>
         <input type="text" name="nome" id="nome" placeholder="Digite o nome da Receita"/>
         <p><label for="foto"></p>
@@ -105,6 +106,68 @@
                         <textarea id="descricao" name="descricao" placeholder="Digite uma pequena descrição sobre a receita" cols="50" rows="5">
         
                         </textarea> 
+        </p>
+        <p>
+            Dificuldade:
+            <input id="facil" type="radio" name="Dificuldade" value="f"/>
+            <label for="facil">facil</label>
+            <input id="media" type="radio" name="Dificuldade" value="m" />
+            <label for="media">media</label>
+            <input id="dificil" type="radio" name="Dificuldade" value="d" />
+            <label for="dificil">dificil</label>
+        </p>
+        <p>
+                Tempo de Preparo: 
+            <input type="number" name="Tempo-preparo" min="1" />
+            <select name="unidade-tempo">
+                <option value="min">minutos</option>
+                <option value="h">horas</option>
+                <option value="d">dias</option>
+            </select>
+        </p>
+        <p>
+            Rendimento: 
+            <input type="number" name="Rendimento" min="1" max="100"/>
+            porções
+        </p>
+        <p> acompanhamentos: <br />
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="acompanhamento" value="arroz"/> arroz
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="acompanhamento" value="feijão"/> feijão
+                        </label>
+                    </td>
+                    <td>
+                        <label> <input type="checkbox" name="acompanhamento" value="fritas"/> fritas 
+                        </label>
+                        
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="acompanhamento" value="salada"/> salada
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="acompanhamento" value="doce"/> doce
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="checkbox" name="acompanhamento" value="pure de batata"/> pure de batata
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            <input type="submit" value="salvar receita">
         </p>
     </div>
     
